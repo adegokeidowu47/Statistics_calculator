@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+body,.main-container{
+  display: flex;
+  align-items: center;
+}
+
+body{
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #ddd;
+  color: #000;
+}
+
+.container{
+  width: 550px;
+  height: auto;
+  background: #c8c7c7;
+  padding: 15px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+}
+
+.main-container{
+  justify-content: space-around;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 350px;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.main-container, div.results{
+  flex-direction: column;
+}
+
+h1,p{
+  font-weight: bold;
+}
+
+h1{
+  margin-bottom: 10px;
+  margin-top: 25px;
+  font-family: Impact;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+p{
+  margin: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center;
+}
+
+p.examp{
+  font-size: 18px;
+}
+
+input{
+  width: calc(100% - 70px);
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  margin: 5px auto 5px;
+  font-size: 18px;
+  text-align: center;
+}
+input:focus{
+  outline: 1px solid #08bf08;
+  border: none;
+}
+
+button{
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  background: linear-gradient(to top right, #ed6b6b, #fb9bf6);
+}
+
+div li {
+  list-style: none;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+div li,button{
+  font-family: Monospace;
+}
+
+div li span{
+  font-size: 20px;
+  color: #4100ec;
+}
+
+.validateError{
+  border: 1px solid red;
+}
+.warning{
+  font-size: 12px;
+  color: #fa2323;
+  font-family: Monospace;
+}
+/* .validateSucces{
+  border: 1px solid green;
+} */
+
+@media screen and ( max-width: 500px){
+  
+    .container{
+      width: 88%;
+      height: auto;
+    }
+    
+    .results{
+      width: 280px;
+      height: auto;
+    }
+    
+    h1{
+      font-size: 1.5em;
+    }
+    
+    p{
+      font-size: 13px;
+    }
+    
+    p.examp{
+      font-size: 10px;
+    }
+    
+    input{
+      width: calc(100% - 40px);
+      height: 40px;
+    }
+  }
+}
